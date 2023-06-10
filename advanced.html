@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            nav.hover{
+                color: #5aeae6;
+            }
+            .field{
+                color: white;
+            }
+            form{
+                display: table;
+            }
+            p{
+                display: table-row;
+            }
+            label{
+                display: table-cell;
+            }
+            input{
+                display: table-cell;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search</title>
+    </head>
+    <body background="456.jpg">
+        <nav style="text-align: right;">
+            <a style="color: white;" href="./index.html">Home</a>
+            <a style="color: white;" href="./picture.html">Picture</a>
+        </nav>
+        <br>
+        <br>
+        <p style="text-align: center; color: white; font-size: 150px;"> Google </p>
+        <p style="color: white; font-size: 35px; font-weight: bold;"> Advanced Search! </p>
+        <br>
+        <br>
+        <p style="color: white; font-size: 20px; font-weight:  bold;"> Find pages with... </p>
+        <br>
+        <br>
+        <form action="https://google.com/search" name="f">
+            <div class="field">
+                <label for="field1">All These Words:</label>
+                <input type="text" class="textinput" id="field1" value=""  name="as_q">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field2">This Exact Word or Phrase: </label>
+                <input type="text" class="textinput" id="field2" value=""  name="as_epq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field3">Any of This Words: </label>
+                <input type="text" class="textinput" id="field3" value=""  name="as_oq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field4">None Of These Words: </label>
+                <input type="text" class="textinput" id="field4" value=""  name="as_eq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field5">Numbers Ranging From: </label>
+                <input type="text" class="textinput1" id="field5" value=""  name="as_nlo">
+                <span class="seperator">to</span>
+                <input type="text" class="textinput2" id="field5" value=""  name="as_nhi">
+            </div>
+            <br>
+            <br>
+            <p style="color: white; font-size: 20px; font-weight:  bold;"> Then narrow your results by... </p>
+            <br>
+            <br>
+            <div class="field">
+                <label for="field6"> Region: </label>
+                <select name="field6" id="field6">
+                    <option value="Any Region" selected> Any Region </option>
+                    <option>Afghanistan</option>
+                    <option>Albania</option>
+                    <option>Algeria</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Antigua and Barbuda</option>
+                    <option>Argentina</option>
+                    <option>Armenia</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Azerbaijan</option>
+                    <option>Bahamas</option>
+                    <option>Bahrain</option>
+                    <option>Bangladesh</option>
+                    <option>Barbados</option>
+                    <option>Belarus</option>
+                    <option>Belgium</option>
+                    <option>Belize</option>
+                    <option>Benin</option>
+                    <option>Bhutan</option>
+                    <option>Bolivia</option>
+                    <option>Bosnia and Herzegovina</option>
+                    <option>Botswana</option>
+                    <option>Brazil</option>
+                    <option>Brunei</option>
+                    <option>Bulgaria</option>
+                    <option>Burkina Faso</option>
+                    <option>Burundi</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="field7"> Language: </label>
+                <select name="filed7" id="filed7">  
+                    <option value="Any Language" selected> Any Language </option>
+                    <option>English</option>
+                    <option>Sinhala</option>        
+                    <option>French</option>
+                    <option>Spanish</option>
+                    <option>Japanese</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="field8"> Last Update: </label>
+                <select name="filed8" id="filed8"> 
+                    <option>Anytime</option>
+                    <option>Last 24 hours</option>        
+                    <option>Past Week</option>
+                    <option>Past Month</option>
+                    <option>Past Year</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <list for="feild9"> Site or Domain: </list>
+                <input type="text" id="field9">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field10" id="field10"> Terms Appearing: </label>
+                <select style="text-align: justify;" name="filed10" id="filed10"> 
+                    <option value="Anywhere in the page" selected>Anywhere in the Page</option>
+                    <option>In the title of the Web Page</option>        
+                    <option>In the text of the Web Page</option>
+                    <option>In the URL of the Web Page</option>
+                    <option>In the links to the Web Page</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="field11" id="field11"> Terms Appearing: </label>
+                <select style="text-align: justify;" name="filed10" id="filed10"> 
+                    <option value="Any Format" selected>Anywhere Format</option>
+                    <option>Adobe Acrobat .pdf</option>        
+                    <option>Adobe Postscript .pdf</option>
+                    <option>AutoDesk DWF .dwf</option>
+                    <option>Microsoft Excel .xls</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="field12" id="field12"> Terms Appearing: </label>
+                <select style="text-align: justify;" name="filed10" id="filed10"> 
+                    <option value="Not filtered by License" selected>Not filtered by License</option>
+                    <option>Free to use or share</option>        
+                    <option>Free to use or share even commercially</option>
+                    <option>Free to share use or modify</option>
+                    <option>Free to share use or modify, even commercially</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <input style="width: 150px; height: 30px; font-size: 18px; font-weight: bold; border-style: dotted; border-radius: 20px;" type="submit" value="Search!">
+
+
+
+        </form>
+    </body>
+</html>
